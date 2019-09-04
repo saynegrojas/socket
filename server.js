@@ -47,7 +47,7 @@ io.on('connection', function(socket) {
 //To load the socket.io-client, (this exposes a io global) add snippits to index.html
 //snippet of scripts tag src= /socket.io/socket.io.js
 //In a scripts tag initialize an instance of socket = io()
-http.listen(3000, function(){
+http.listen(process.env.PORT || 3000, function(){
   console.log('listening on *:3000');
 });
 
